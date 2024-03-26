@@ -1,0 +1,209 @@
+/*Universal Styles */
+html {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Styles */
+header #logo {
+    font-family: "Bakbak One";
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: white;
+    padding: 0 3rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 540px) {
+    header {
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        padding: 1rem;
+    }
+
+    #logo {
+        font-size: 1.5rem !important;
+        padding: 10px !important;
+    }
+}
+
+/*Hero Section Styles */
+#hero {
+    background-image: url('./images/hero-image-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    text-shadow: none;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/*Services Section Styles */
+#services {
+    padding: 2rem;
+}
+
+#services h2, p {
+    text-align: center;
+}
+
+.vypis-sluzeb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sluzba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1.5rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.377);
+    width: 20vw;
+    height: 50vh;
+}
+
+.sluzba img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    padding-bottom: 2rem
+}
+
+@media screen and (max-width: 1000px) {
+    .sluzba img {
+        width: 100%
+    }
+
+    .sluzba {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sluzba {
+        width: 55vw;
+        padding: 2rem;
+        min-width: 100px;
+    }
+
+    .vypis-sluzeb {
+        flex-direction: column;
+    }
+}
+
+/*Značky Section Styles */
+#znacky {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#znacky img {
+    width: 10%;
+    height: auto;
+    padding: 2rem;
+}
+
+/*Kontakty Section Styles */
+#kontakty h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.seznam-kontaktu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontakt {
+    margin: 3rem;
+}
+
+.kontakt p {
+    text-align: left;
+}
+
+@media only screen and (max-width: 540px) {
+    #znacky img {
+        width: 30%;
+        padding: 10px;
+    }
+
+    #znacky {
+        flex-wrap: wrap;
+    }
+
+    .kontakt p {
+        font-size: 0.75rem;
+    }
+}
+
+/*Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0 2rem;
+}
